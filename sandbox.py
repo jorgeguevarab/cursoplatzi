@@ -1,3 +1,6 @@
+
+
+
 # import bs4
 # import requests as rq
 # import re
@@ -20,7 +23,13 @@
 
 # print(parte)
 
-
-a = int(input())
-print(str(a))
+try:
+    a = int(input())
+    print(str(a))
+except ValueError:
+    print('Parece que hubo un error')
+except SyntaxError:
+    print('Error de sintaxis')
+except NameError:
+    print('Error de nombre')
 
