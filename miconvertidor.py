@@ -37,15 +37,14 @@ opcion = int(input("Escribe una de las opciones: "))
 
 
 if opcion == 1:
-    valor1 = float(input("Valor en {} ".format(moneda1)))
-    resultado = round((valor1 * factorconv),2)
-    print("{} {} equivalen a {} {}".format(str(valor1),moneda1,str(resultado), moneda2))
-else:
-    if opcion == 2:
+        valor1 = float(input("Valor en {} ".format(moneda1)))
+        resultado = round((valor1 * factorconv),2)
+        print("{} {} equivalen a {} {}".format(str(valor1),moneda1,str(resultado), moneda2))
+elif opcion == 2:
         valor1 = float(input("Valor en {} ".format(moneda2)))
         resultado = round((valor1 / factorconv),2)
         print("{} {} equivalen a {} {}".format(str(valor1),moneda2,str(resultado), moneda1))
-    else:
+else:
         print("No seleccionaste una opción válida. Vuelve a iniciar")
 
 
