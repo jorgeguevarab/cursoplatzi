@@ -1,3 +1,4 @@
+from funciones import convertir, mensaje
 
 from datetime import date
 
@@ -38,12 +39,12 @@ opcion = int(input("Escribe una de las opciones: "))
 
 if opcion == 1:
         valor1 = float(input("Valor en {} ".format(moneda1)))
-        resultado = round((valor1 * factorconv),2)
-        print("{} {} equivalen a {} {}".format(str(valor1),moneda1,str(resultado), moneda2))
+        resultado = convertir(valor1, factorconv,opcion)
+        mensaje(valor1,resultado,moneda1, moneda2)
 elif opcion == 2:
         valor1 = float(input("Valor en {} ".format(moneda2)))
-        resultado = round((valor1 / factorconv),2)
-        print("{} {} equivalen a {} {}".format(str(valor1),moneda2,str(resultado), moneda1))
+        resultado = convertir(valor1, factorconv,opcion)
+        mensaje(valor1,resultado,moneda2, moneda1)
 else:
         print("No seleccionaste una opción válida. Vuelve a iniciar")
 
