@@ -17,3 +17,13 @@ def convertir(moneda,factor,tipo):
 
 def mensaje(valor, resultado, m1, m2):
     print("{} {} equivalen a {} {}".format(str(valor),m1,str(resultado), m2))
+
+
+def espalindromo(palabra):
+    palabra = palabra.replace(' ','')
+    palabra = palabra.upper()
+    palabra_invertida = palabra[::-1]
+    if palabra == palabra_invertida:
+        return True
+    else:
+        return False
