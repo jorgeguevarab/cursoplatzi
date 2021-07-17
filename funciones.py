@@ -27,3 +27,21 @@ def espalindromo(palabra):
         return True
     else:
         return False
+
+def imprimepotencias(numero, veces, stop):
+    n = 0
+    potencia = 0
+    while n < veces:
+        
+        if potencia >= stop:
+            break
+        potencia = numero**n
+        n += 1
+        print(str(potencia))
+        
+    
+
+def invierte_palabra(palabra):
+
+    for letra in palabra:
+        nuevapalabra = 

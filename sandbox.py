@@ -1,4 +1,14 @@
 
+palabra = input('Escribe una palabra: ')
+
+
+
+if palabra.replace(' ','').lower() == palabra[::-1].replace(' ','').lower():
+    print('***** ES PALÍNDROMO *****')
+else:
+    print('***** noespalíndromo *****')
+
+# print(palabra[::-1])
 
 
 # import bs4
@@ -23,13 +33,13 @@
 
 # print(parte)
 
-try:
-    a = int(input())
-    print(str(a))
-except ValueError:
-    print('Parece que hubo un error')
-except SyntaxError:
-    print('Error de sintaxis')
-except NameError:
-    print('Error de nombre')
+# try:
+#     a = int(input())
+#     print(str(a))
+# except ValueError:
+#     print('Parece que hubo un error')
+# except SyntaxError:
+#     print('Error de sintaxis')
+# except NameError:
+#     print('Error de nombre')
 
