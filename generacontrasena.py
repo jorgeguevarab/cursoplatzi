@@ -7,12 +7,14 @@ def generar_contrasena(numero_caracteres):
     # simbolos = string.punctuation
     # temporal = mayusculas + minusculas + numeros + simbolos
     # sizetemporal = len(temporal)
-    temporal = string.printable
+    # temporal = string.printable
+    temporal = string.ascii_letters + string.digits + string.punctuation
     final = ''
     
     for i in range(numero_caracteres):
-        aleatorio = random.randint(0,len(temporal)-1)
-        final = final + temporal[aleatorio]
+        # aleatorio = random.randint(0,len(temporal)-1)
+        # final = final + temporal[aleatorio]
+        final = final + random.choice(temporal)
     
     return final
   
