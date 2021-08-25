@@ -75,7 +75,7 @@ def run():
     os.system("clear")
     palabra = select_words()
     
-    print(palabra)
+    # print(palabra)
     
     current_word = ['_ ' for i in range(len(palabra))]
     print("".join(current_word))
